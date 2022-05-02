@@ -72,10 +72,6 @@ int main(int argc, char **argv)
 			//printf("I'm parent pid=%d\n", getpid());
 		}
 	}
-
-
-	//free(data);
-
 	
 
 
