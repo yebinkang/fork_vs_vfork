@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 	struct timespec start_time, end_time;
 
 	if (argc < 3) {
-		printf("./a.out <data_size_in_GB> <vfork>\n");
+		printf("%s <data_size_in_GB> <vfork>\n", argv[0]);
 		return 0;
 	}
 	data_size_GB = (unsigned long)atoi(argv[1]);
