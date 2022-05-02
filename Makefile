@@ -2,6 +2,7 @@ CFLAGS = -O3 -Wall
 CC = gcc
 OBJS = fork_vs_vfork.o
 SRCS = fork_vs_vfork.c
+.PHONY: test clean
 
 fork_vs_vfork.out: $(OBJS)
 	$(CC) -o fork_vs_vfork.out $(CFLAGS) $(OBJS)
