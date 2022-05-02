@@ -11,9 +11,9 @@ fork_vs_vfork.o: $(SRCS)
 	$(CC) -c $(CFLAGS) $(SRCS)
   
 test: fork_vs_vfork.out
-	@echo "fork 1GB"
+	@echo "test fork 1GB"
 	./fork_vs_vfork.out 1 0
-	@echo "vfork 1GB"
+	@echo "test vfork 1GB"
 	./fork_vs_vfork.out 1 1
 
 clean:
