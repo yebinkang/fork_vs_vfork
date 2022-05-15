@@ -10,6 +10,7 @@ pipeline {
       steps { 
         git 'https://github.com/jwpark-sungshin/fork_vs_vfork.git'
       }
+    }
     stage('Build image') {
       steps {
         script {
